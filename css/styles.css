@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 24px 0 0;
+}
+
+.basicLightbox {
+    background: rgba(46, 47, 66, 0.8) !important;
+}
+
+.gallery {
+    width: 1128px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 24px;
+}
+
+.gallery-link {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    background: #2E2F42;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 250ms ease;
+}
+
+.gallery-link:hover .gallery-image {
+    transform: scale(1.05);
+}
